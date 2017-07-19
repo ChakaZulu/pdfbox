@@ -28,7 +28,7 @@ before_install:
   - sudo apt-get install -qq fonts-liberation
   - sudo apt-get install -qq ikvm
   
-after_script:
+after_success:
   - buildscripts/build_all.sh
   
 deploy:
