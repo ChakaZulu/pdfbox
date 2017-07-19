@@ -18,7 +18,6 @@
 # This file allows PDFBox to be built with Travis CI https://travis-ci.org/
 
 language: java
-dist: trusty
 
 jdk:
   - oraclejdk8
