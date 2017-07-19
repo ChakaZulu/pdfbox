@@ -29,6 +29,7 @@ before_install:
   - sudo apt-get install -qq ikvm
   
 after_success:
+  - chmod u+x buildscripts/*.sh
   - buildscripts/build_all.sh
   
 deploy:
