@@ -1,4 +1,6 @@
 #!/bin/bash
+currdir=`dirname "$0"`
+cd "$currdir"
 . ./buildenv.sh
 mkdir "$outdir"
 ./build_hamcrestcore.sh
