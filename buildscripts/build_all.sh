@@ -16,4 +16,6 @@ mkdir "$outdir"
 ./build_fontbox.sh
 ./build_pdfbox.sh
 
+ikvm_version=`dpkg -s ikvm |grep Version:|cut -d " " -f 2`
+echo "ikvm $ikvm_version" > "$outdir/ikvm_$ikvm_version"
 
